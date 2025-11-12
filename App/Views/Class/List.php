@@ -11,7 +11,7 @@ if ($results && !$results['success']) {
 
 <?php if ($result->result['classes'] != null): ?>
     <div>
-        <a class="btn btn-primary"
+        <a class="btn btn-primary my-3"
             style="width: 150px;"
             href="/school_project/classes/create"
             role="button">Add Class</a>

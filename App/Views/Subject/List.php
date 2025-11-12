@@ -10,7 +10,7 @@ if ($results && !$results['success']) {
 ?>
 <?php if ($result->result['subjects'] != null): ?>
     <div>
-        <a class="btn btn-primary"
+        <a class="btn btn-primary my-3"
             style="width: 150px;"
             href="/school_project/subjects/create"
             role="button">Add Subject</a>

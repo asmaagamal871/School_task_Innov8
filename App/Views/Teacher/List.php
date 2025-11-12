@@ -1,7 +1,7 @@
 <h2>Teachers</h2>
 <?php if ($result->result['teachers'] != null): ?>
     <div>
-        <a class="btn btn-primary"
+        <a class="btn btn-primary my-3"
             style="width: 150px;"
             href="/school_project/teachers/create"
             role="button">Add Teacher</a>

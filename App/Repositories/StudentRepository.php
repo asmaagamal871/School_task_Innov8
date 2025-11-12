@@ -82,7 +82,7 @@ class StudentRepository
             WHERE s.student_id = ?
         ");
         $stmt->execute([$id]);
-        $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $rows = $stmt->fetchAll();
 
         if ($rows) {
             $student = [

@@ -14,6 +14,9 @@ unset($_SESSION['result'], $_SESSION['input_fields']);
         <p><?php echo $result->message; ?></p>
     <?php endif; ?>
 <?php endif; ?>
+<a class="btn btn-primary" href="/school_project/subjects" style="width :40px;">
+    <i class="bi bi-arrow-left-short"></i>
+</a>
 <div class="d-flex justify-content-center align-items-center pt-5">
     <div class="bg-light bg-gradient p-5 rounded shadow">
         <h2><?= $id === 0 ? 'Create new Subject' : 'Edit subject' ?></h2>
@@ -27,7 +30,7 @@ unset($_SESSION['result'], $_SESSION['input_fields']);
                 aria-label="default input example"
                 name="subject_name"
 
-                value=<?= $id === 0 ? $inputFields['subject_name'] : $subjectData['subject_name'] ?>>
+                value="<?= $id === 0 ? $inputFields['subject_name'] : $subjectData['subject_name'] ?>">
             <br>
             <button class="btn btn-primary" type="submit">Save</button>
         </form>
